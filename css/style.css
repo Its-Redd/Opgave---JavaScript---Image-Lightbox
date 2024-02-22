@@ -31,7 +31,7 @@ img {
   cursor: pointer;
 }
 
-.overlay {
+#overlay {
   display: flex;
   justify-content: center;
   z-index: 999;
@@ -42,6 +42,12 @@ img {
   right: 0;
   background-color: hsla(0, 0%, 10%, 0.9);
   cursor: pointer;
+}
+
+#overlay img {
+  margin-top: 5%;
+  width: 80%;
+  height: 80%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -59,6 +65,12 @@ img {
   }
 
   #gallery ul li {
-    margin: 10px;
+    margin: 10px 50px;
+  }
+
+  #overlay img {
+    margin-top: 35vh;
+    width: 360px;
+    height: 216px;
   }
 }

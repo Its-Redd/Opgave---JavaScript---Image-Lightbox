@@ -16,7 +16,6 @@ gallery.addEventListener('click', function (event) {
     let temp = source1.split('_');
     image.src = './img/img/' + temp[1];
 
-    image.style.border = '3px solid white';
     overlay.appendChild(image);
     document.body.appendChild(overlay);
   }
