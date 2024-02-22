@@ -8,7 +8,9 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #6e6e6e;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 li {
@@ -24,7 +26,6 @@ li {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
 }
 img {
   cursor: pointer;
@@ -41,4 +42,23 @@ img {
   right: 0;
   background-color: hsla(0, 0%, 10%, 0.9);
   cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    height: auto;
+  }
+
+  #gallery {
+    width: 100%;
+  }
+
+  #gallery ul {
+    justify-content: center;
+    align-items: space-between;
+  }
+
+  #gallery ul li {
+    margin: 10px;
+  }
 }
