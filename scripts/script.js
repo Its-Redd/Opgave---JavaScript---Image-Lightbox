@@ -5,6 +5,7 @@ gallery.addEventListener('click', function (event) {
   if (target.tagName === 'IMG') {
     let overlay = document.createElement('div');
     overlay.id = 'overlay';
+    overlay.style.position = 'fixed';
     overlay.addEventListener('click', function () {
       if (overlay) {
         overlay.remove();

@@ -46,7 +46,7 @@ img {
 
 @media screen and (max-width: 1280px) {
   body {
-    height: auto;
+    height: 120vh;
   }
 
   #gallery {
